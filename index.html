@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+
+  <div class="wrapper">
+    <div class="card-wrapper">
+      <div>
+        <img src="me.jpg" alt="user" />
+      </div>
+      <div class="user-name">
+        <h2>Harsh</h2>
+      </div>
+      <div class="designation">
+        <h3>Student Chandigarh University</h3>
+      </div>
+      <div class="bottom-group">
+        <button onclick="openModal()" class="btn-share btn-card">
+<i class="fas fa-share"></i>
+
+          <div>share my profile</div>
+        </button>
+
+        <button class="btn-follow btn-card">Follow me</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Component -->
+  <div class="modal">
+    <div class="modal-header">
+      <h1>Share My Profile</h1>
+      <div>
+        <i onclick="closeModal()" class="fa fa-close"></i>
+      </div>
+    </div>
+
+
+    <div>
+
+      <h3>Share this via</h3>
+
+      
+      <div class="icon-container">
+        <a href="https://leetcode.com/u/H4RSHH/" class="icon" id="leetcode">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" style="width:27px; height:auto;">
+        </a>
+        <a href="https://github.com/H4RSHUH" class="icon" id="git">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/hrsh_here?igsh=YmRnMTcwbmxjNHV3" class="icon" id="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/harsh-3055-garg/" class="icon" id="linkedin">
+<i class="fab fa-linkedin"></i>
+
+        </a>
+        <a href="https://www.snapchat.com/add/h4rsh_here?share_id=EGEDjyBOi3g&locale=en-US" class="icon" id="snap">
+<i class="fab fa-snapchat-ghost"></i> 
+
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" onclick="closeModal()"></div>
+
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
