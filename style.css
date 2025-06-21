@@ -273,3 +273,65 @@
       width: 80vw;
     }
   }
+
+  @media (max-width: 768px) {
+  .card-wrapper {
+    width: 90%;
+    padding: 15px 20px;
+  }
+
+  .bottom-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-follow,
+  .btn-share {
+    width: 100%;
+    text-align: center;
+  }
+
+  .modal {
+    width: 85vw;
+    padding: 15px;
+  }
+
+  .icon-container {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  .icon i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .circle1,
+  .circle2 {
+    display: none; /* hide decorative circles for small devices */
+  }
+
+  .card-wrapper div img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .user-name h2 {
+    font-size: 1.2rem;
+  }
+
+  .designation h3 {
+    font-size: 0.9rem;
+  }
+
+  .modal-header h1 {
+    font-size: 1.2rem;
+  }
+}
